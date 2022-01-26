@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+
+    #logo {
+        color: white;
+    }
+
+    #menu {
+        display: flex;
+    }
+}
+
+.nav-active{
+    background-color: white;
+}
+
+main{
+    background-color: rgb(137, 211, 137);
+    height: 2000px;
+}
+
+/* .slider--slide{
+    height : 200px;
+} */
