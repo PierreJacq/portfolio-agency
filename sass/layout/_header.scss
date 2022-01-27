@@ -7,26 +7,57 @@ header{
     z-index: 20;
     width: 100%;
     padding: 0.5rem;
-    transition: 0.3s ease-in-out;
 
-    #logo {
-        color: white;
+    #logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        &:hover #logo--title{
+            transition: .5s;
+            color: $color-black-secondary;
+        }
+        &:hover #logo--sub-title{
+            transition: .5s;
+            color:  $color-black-main;
+        }
+        &--title{
+            font-size: 2rem;
+            height: 2.1rem;
+            font-weight: 800;
+            color: $color-black-main;
+
+        }
+        &--sub-title{
+            font-size: 1.2rem;
+            color: $color-black-secondary;
+        }
     }
 
     #menu {
         display: flex;
+        a {
+            text-decoration: none;
+            padding: 0 0.2rem 0 0.2rem;
+        }
     }
 }
 
-.nav-active{
+.nav-scrolled{
     background-color: white;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
+
+
+
+// pour travailler sur le header
 
 main{
+    padding-top : 100px;
     background-color: rgb(137, 211, 137);
-    height: 2000px;
+    height: 100vh;
 }
 
-/* .slider--slide{
-    height : 200px;
-} */
+footer{
+    height: 500px;
+}

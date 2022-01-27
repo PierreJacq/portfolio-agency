@@ -17,26 +17,52 @@ header {
   z-index: 20;
   width: 100%;
   padding: 0.5rem;
-  transition: 0.3s ease-in-out;
 }
 header #logo {
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+header #logo:hover #logo--title {
+  transition: 0.5s;
+  color: gray;
+}
+header #logo:hover #logo--sub-title {
+  transition: 0.5s;
+  color: #000000;
+}
+header #logo--title {
+  font-size: 2rem;
+  height: 2.1rem;
+  font-weight: 800;
+  color: #000000;
+}
+header #logo--sub-title {
+  font-size: 1.2rem;
+  color: gray;
 }
 header #menu {
   display: flex;
 }
+header #menu a {
+  text-decoration: none;
+  padding: 0 0.2rem 0 0.2rem;
+}
 
-.nav-active {
+.nav-scrolled {
   background-color: white;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 
 main {
+  padding-top: 100px;
   background-color: #89d389;
-  height: 2000px;
+  height: 100vh;
 }
 
-/* .slider--slide{
-    height : 200px;
-} */
+footer {
+  height: 500px;
+}
 
 /*# sourceMappingURL=styles.css.map */

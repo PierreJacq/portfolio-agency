@@ -1,10 +1,10 @@
 // Gestion de la nav-bar
 
-const navbar = document.querySelector('.nav-fixed');
+const navbar = document.querySelector('#nav-on-top');
 window.onscroll = () => {
-    if (window.scrollY > 300) {
-        navbar.classList.add('nav-active');
+    if (window.scrollY > 50) {
+        navbar.classList.add('nav-scrolled');
     } else {
-        navbar.classList.remove('nav-active');
+        navbar.classList.remove('nav-scrolled');
     }
 };
