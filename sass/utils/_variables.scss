@@ -1,2 +1,9 @@
-$color-black-main: #000000;
-$color-black-secondary: lighten($color-black-main, 50%);
+$color-black-primary: #000000;
+$color-black-secondary: lighten($color-black-primary, 50%);
+$color-black-tertiary: lighten($color-black-primary, 30%);
+
+$color-blue-primary: #3950FF;
+
+$color-white-primary: #ffffff;
+
+$color-yellow-main:#EBD757;

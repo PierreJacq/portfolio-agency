@@ -6,12 +6,11 @@ header{
     position: fixed;
     z-index: 20;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem 3rem 0 3rem;
 
     #logo{
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 200px;
         &:hover #logo--title{
             transition: .5s;
@@ -19,45 +18,55 @@ header{
         }
         &:hover #logo--sub-title{
             transition: .5s;
-            color:  $color-black-main;
+            color:  $color-black-primary;
         }
         &--title{
-            font-size: 2rem;
-            height: 2.1rem;
+            font-size: 1.8rem;
+            height: 1.8rem;
             font-weight: 800;
-            color: $color-black-main;
-
+            color: $color-black-primary;
         }
         &--sub-title{
-            font-size: 1.2rem;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
             color: $color-black-secondary;
         }
     }
-
+    nav{
+        width: 70%;
+    }
     #menu {
         display: flex;
+        justify-content: space-between;
         a {
+            position: relative;
             text-decoration: none;
+            color: $color-black-tertiary;
+            font-weight: 700;
             padding: 0 0.2rem 0 0.2rem;
+            &::after{
+                content: "";
+                position:absolute;
+                background-color: $color-blue-primary;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: -5px;
+            }
+            &:hover::after{
+                width: 100%;
+                transition: 0.3s 0.3s;
+            }
         }
     }
 }
 
 .nav-scrolled{
-    background-color: white;
-    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    background-color: $color-white-primary;
+    box-shadow: 1px 1px 1px $color-black-secondary;
+    padding: 1.2rem 3.2rem 0.5rem 3.2rem;
+    transition : 0.3s 0.2s;
 }
 
 
 
-// pour travailler sur le header
-
-main{
-    padding-top : 100px;
-    background-color: rgb(137, 211, 137);
-    height: 100vh;
-}
-
-footer{
-    height: 500px;
-}
