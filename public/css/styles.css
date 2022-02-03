@@ -88,6 +88,7 @@ header #menu a:hover::after {
 }
 #slider .slider--slide {
   margin-left: 3rem;
+  display: none;
 }
 #slider .slider--slide .slide--titre {
   color: #3950FF;
@@ -99,7 +100,7 @@ header #menu a:hover::after {
   font-weight: bold;
 }
 
-.slider--background {
+#slider--background {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,12 +111,17 @@ header #menu a:hover::after {
   background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
+  transition: background-image 0.5s;
 }
 
 #slider--bullets {
   position: absolute;
   top: 95vh;
   left: 3rem;
+  color: gray;
+}
+#slider--bullets #circle0 {
+  color: #3950FF;
 }
 
 footer {
