@@ -110,6 +110,15 @@ footer {
 #conteneur--footer #footer--contact {
   max-width: 25%;
 }
+#conteneur--footer #footer--contact #footer--social {
+  display: flex;
+  flex-direction: row;
+  max-width: 10%;
+}
+#conteneur--footer #footer--contact #footer--social i {
+  font-size: 1.5rem;
+  margin: 5px;
+}
 #conteneur--footer #footer--address {
   max-width: 25%;
 }
