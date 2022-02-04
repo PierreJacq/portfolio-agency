@@ -42,7 +42,8 @@ header{
             position: relative;
             text-decoration: none;
             color: $color-black-tertiary;
-            font-weight: 700;
+            font-weight: 900;
+            font-size: 0.9rem;;
             padding: 0 0.2rem 0 0.2rem;
             &::after{
                 content: "";
@@ -52,10 +53,11 @@ header{
                 width: 0;
                 left: 0;
                 bottom: -5px;
+                transition: 0.5s;
             }
             &:hover::after{
                 width: 100%;
-                transition: 0.3s 0.3s;
+                transition: 0.3s 0.1s;
             }
         }
     }

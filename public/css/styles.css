@@ -52,8 +52,9 @@ header #menu {
 header #menu a {
   position: relative;
   text-decoration: none;
-  color: #4d4d4d;
-  font-weight: 700;
+  color: #292A34;
+  font-weight: 900;
+  font-size: 0.9rem;
   padding: 0 0.2rem 0 0.2rem;
 }
 header #menu a::after {
@@ -64,10 +65,11 @@ header #menu a::after {
   width: 0;
   left: 0;
   bottom: -5px;
+  transition: 0.5s;
 }
 header #menu a:hover::after {
   width: 100%;
-  transition: 0.3s 0.3s;
+  transition: 0.3s 0.1s;
 }
 
 .nav-scrolled {
@@ -75,6 +77,41 @@ header #menu a:hover::after {
   box-shadow: 1px 1px 1px gray;
   padding: 1.2rem 3.2rem 0.5rem 3.2rem;
   transition: 0.3s 0.2s;
+}
+
+footer {
+  background-color: #292A34;
+  display: flex;
+  justify-content: center;
+}
+
+#conteneur--footer {
+  max-width: 1000px;
+  background-color: #292A34;
+  display: flex;
+  justify-content: space-evenly;
+}
+#conteneur--footer h2, #conteneur--footer p, #conteneur--footer i, #conteneur--footer a {
+  color: #ffffff;
+}
+#conteneur--footer p, #conteneur--footer a {
+  font-size: 0.9rem;
+  margin: 0.8rem 0 0.5rem 0;
+  text-justify: inter-word;
+}
+#conteneur--footer div {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+#conteneur--footer #footer--resume {
+  max-width: 35%;
+}
+#conteneur--footer #footer--contact {
+  max-width: 25%;
+}
+#conteneur--footer #footer--address {
+  max-width: 25%;
 }
 
 #slider {

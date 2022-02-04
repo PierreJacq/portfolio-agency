@@ -1,0 +1,36 @@
+footer{
+    background-color: $color-black-tertiary;
+    display: flex;
+    justify-content: center;
+}
+#conteneur--footer{
+    max-width: 1000px;
+    background-color: $color-black-tertiary;
+    display: flex;
+    justify-content: space-evenly;
+    h2, p, i,a {
+        color: $color-white-primary;
+    }
+    p,a {
+        font-size: 0.9rem;
+        margin: .8rem 0 .5rem 0;
+        text-justify: inter-word ;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+    #footer--resume{
+        max-width: 35%;
+        p {
+        }
+    }
+    #footer--contact{
+        max-width: 25%;
+    }
+    #footer--address{
+        max-width: 25%;
+    }
+    
+}

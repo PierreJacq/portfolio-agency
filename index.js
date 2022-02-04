@@ -28,12 +28,12 @@ const backgroundCible = document.getElementById("slider--background");
 const tousSlides = document.getElementsByClassName("slider--slide");
 const toutesBullet = document.querySelectorAll(".fas.fa-circle");
 
-for (var mi = 0; mi < toutesBullet.length; mi++) {
+/* for (var mi = 0; mi < toutesBullet.length; mi++) {
     toutesBullet[mi].addEventListener("click", () => {
         indexSlider = [mi];
         console.log(indexSlider)
     });
-};
+}; */ // Ne marche pas encore
 
 
 //Slide initial
@@ -57,8 +57,8 @@ const changeBackground = () => {
     slideCible.style.display = "block";
     
     //Mise à jour bullets
-    for (i = 0; i < toutesBullet.length; i++) {
-        toutesBullet[i].style.color = "#808080";
+    for (var j = 0; j < toutesBullet.length; j++) { 
+        toutesBullet[j].style.color = "#808080";
     };
     var bulletCible = document.getElementById("circle" + indexSlider + "");
     bulletCible.style.color = "#3950FF";
