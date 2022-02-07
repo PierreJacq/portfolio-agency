@@ -80,9 +80,11 @@ header #menu a:hover::after {
 }
 
 footer {
+  padding-top: 2rem;
   background-color: #292A34;
   display: flex;
   justify-content: center;
+  max-height: 25vh;
 }
 
 #conteneur--footer {
@@ -102,7 +104,6 @@ footer {
 #conteneur--footer div {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
 }
 #conteneur--footer #footer--resume {
   max-width: 35%;
@@ -113,11 +114,13 @@ footer {
 #conteneur--footer #footer--contact #footer--social {
   display: flex;
   flex-direction: row;
-  max-width: 10%;
 }
-#conteneur--footer #footer--contact #footer--social i {
+#conteneur--footer #footer--contact #footer--social a {
+  display: block;
+}
+#conteneur--footer #footer--contact #footer--social a i {
   font-size: 1.5rem;
-  margin: 5px;
+  margin-right: 1rem;
 }
 #conteneur--footer #footer--address {
   max-width: 25%;

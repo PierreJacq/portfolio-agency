@@ -28,13 +28,6 @@ const backgroundCible = document.getElementById("slider--background");
 const tousSlides = document.getElementsByClassName("slider--slide");
 const toutesBullet = document.querySelectorAll(".fas.fa-circle");
 
-/* for (var mi = 0; mi < toutesBullet.length; mi++) {
-    toutesBullet[mi].addEventListener("click", () => {
-        indexSlider = [mi];
-        console.log(indexSlider)
-    });
-}; */ // Ne marche pas encore
-
 
 //Slide initial
 var slideCible = document.getElementById("slide" + indexSlider + "");
